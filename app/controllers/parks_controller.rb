@@ -6,11 +6,6 @@ class ParksController < ApplicationController
   # GET /parks.json
   def index
     @parks = Park.all
-    if logged_in?
-      redirect_to 'parks/index'
-    else
-      redirect_to 'sessions/new'
-    end
   end
 
   # GET /parks/1

@@ -1,13 +1,20 @@
+<h1>Welcome Page</h1>
+
 <p id="notice"><%= notice %></p>
 <% if logged_in? %>
 <%= link_to "Log out", logout_path, method: "delete" %>
-<% else %>
-<% redirect_to root_url %>
+<br>
 <% end %>
-<h1>Parks</h1>
+<%= link_to "Residents", "residents#show" %><br>
+<%= link_to "Rules", "rules#show" %>
+<!-- <%= link_to "Create New Notice", "#" %> -->
+<!-- <%= link_to "View Notice", logout_path, method: "delete" %> -->
 
 
-<table>
+
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Park name</th>
@@ -35,8 +42,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
-<br>
+<!-- <br> -->
 
-<%= link_to 'New Park', new_park_path %>
+<!-- <%= link_to 'New Park', new_park_path %> -->
