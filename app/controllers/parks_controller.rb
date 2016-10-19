@@ -1,10 +1,16 @@
 class ParksController < ApplicationController
   before_action :set_park, only: [:show, :edit, :update, :destroy]
+  before_action :authorize
 
   # GET /parks
   # GET /parks.json
   def index
     @parks = Park.all
+    if logged_in?
+      redirect_to 'parks/index'
+    else
+      redirect_to 'sessions/new'
+    end
   end
 
   # GET /parks/1
