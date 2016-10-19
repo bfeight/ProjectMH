@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @rule.number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rule.name %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @rule.body %>
+</p>
+
+<p>
+  <strong>Violation summary:</strong>
+  <%= @rule.violation_summary %>
+</p>
+
+<p>
+  <strong>Violation recommondation:</strong>
+  <%= @rule.violation_recommondation %>
+</p>
+
+<p>
+  <strong>Thirty day summary:</strong>
+  <%= @rule.thirty_day_summary %>
+</p>
+
+<%= link_to 'Edit', edit_rule_path(@rule) %> |
+<%= link_to 'Back', rules_path %>

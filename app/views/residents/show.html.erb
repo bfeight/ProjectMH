@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Resident one:</strong>
+  <%= @resident.resident_one %>
+</p>
+
+<p>
+  <strong>Resident two:</strong>
+  <%= @resident.resident_two %>
+</p>
+
+<p>
+  <strong>Lot number:</strong>
+  <%= @resident.lot_number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @resident.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @resident.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @resident.state %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @resident.zip_code %>
+</p>
+
+<%= link_to 'Edit', edit_resident_path(@resident) %> |
+<%= link_to 'Back', residents_path %>
