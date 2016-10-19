@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
-
+<% if logged_in? %>
+<%= link_to "Log out", logout_path, method: "delete" %>
+<% else %>
+<% redirect_to root_url %>
+<% end %>
 <h1>Parks</h1>
+
 
 <table>
   <thead>

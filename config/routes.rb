@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#login_page'
+  root 'sessions#new'
   resources :rules
   resources :residents
   resources :parks
