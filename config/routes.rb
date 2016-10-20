@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :notices
   root 'sessions#new'
   resources :rules
   resources :residents
