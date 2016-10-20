@@ -26,6 +26,9 @@ class ParksController < ApplicationController
   # POST /parks.json
   def create
     @park = Park.new(park_params)
+    # debugger
+    logger.debug("======= #{@park}")
+    @park.user_id = current_user.id
 
     respond_to do |format|
       if @park.save
